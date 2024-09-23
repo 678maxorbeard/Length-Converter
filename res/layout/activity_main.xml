@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Length Converter"
+        android:textSize="24sp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/input_length"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter length value"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"/>
+
+    <Spinner
+        android:id="@+id/input_unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"/>
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert" />
+
+    <TextView
+        android:id="@+id/output_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Converted Length will appear here"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
